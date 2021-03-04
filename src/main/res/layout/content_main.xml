@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ebook.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></WebView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonBack"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnBackOnClick"
+                    android:text="@string/back" />
+
+                <Button
+                    android:id="@+id/buttonNext"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnNextOnClick"
+                    android:text="@string/next" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/searchToolLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:autofillHints="@string/find"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10sp"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/searchBackButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/searchText"
+            android:contentDescription="@string/content_description"
+            app:srcCompat="@drawable/ic_action_prev" />
+
+        <ImageButton
+            android:id="@+id/searchForwardButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/searchBackButton"
+            android:contentDescription="@string/content_description"
+            app:srcCompat="@drawable/ic_action_next" />
+
+        <TextView
+            android:id="@+id/searchCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/searchCloseButton"
+            android:layout_toEndOf="@id/searchForwardButton"
+            android:paddingTop="10sp"
+            android:textColor="@color/textColor" />
+
+        <ImageButton
+            android:id="@+id/searchCloseButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/content_description"
+            app:srcCompat="@drawable/ic_action_close" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:contentDescription="@string/content_description"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_action_search" />
+
+</RelativeLayout>

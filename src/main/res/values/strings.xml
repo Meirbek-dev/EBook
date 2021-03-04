@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">EBook</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="back">Назад</string>
+    <string name="next">Далее</string>
+    <string name="search">Поиск</string>
+    <string name="content_description">Описание контента</string>
+    <string name="big_font">Большой шрифт</string>
+    <string name="enable_search">Включить поиск</string>
+    <string name="exit">Выход</string>
+    <string name="app_description">Электронная книга с прогнозом погоды</string>
+    <string name="send_mail">Написать отзыв</string>
+    <string name="communicate">Обратная связь</string>
+    <string name="read">Прогноз погоды</string>
+    <string name="now">Сейчас</string>
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="three_days">На 3 дня</string>
+    <string name="weekly">На неделю</string>
+    <string name="two_weeks">На 2 недели</string>
+    <string name="monthly">На месяц</string>
+    <string name="find">Найти</string>
+    <string name="meteorology">Метеорология</string>
+    <string name="causes">Причины явлений</string>
+    <string name="weather">Погода</string>
+    <string name="forecast">Прогнозы погоды</string>
+</resources>

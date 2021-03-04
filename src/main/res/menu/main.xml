@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/full_size_font"
+        android:checkable="true"
+        android:icon="@drawable/ic_settings_overscan_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/big_font"
+        android:titleCondensed="Persist" />
+    <item
+        android:id="@+id/mySearch"
+        android:checkable="true"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="101"
+        android:title="@string/enable_search"
+        android:titleCondensed="Persist" />
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="102"
+        android:title="@string/exit"
+        app:showAsAction="never" />
+</menu>
