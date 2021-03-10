@@ -98,7 +98,7 @@
             android:layout_toStartOf="@+id/searchCloseButton"
             android:layout_toEndOf="@id/searchForwardButton"
             android:paddingTop="10sp"
-            android:textColor="@color/textColor" />
+            android:textColor="@color/white" />
 
         <ImageButton
             android:id="@+id/searchCloseButton"
